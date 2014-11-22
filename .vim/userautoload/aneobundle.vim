@@ -21,7 +21,11 @@ NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'tpope/vim-endwise'
 " コメントON/OFFを手軽に実行
 NeoBundle 'tomtom/tcomment_vim'
+"インデントを揃える
 NeoBundle 'Align'
+" Ruby向けにendを自動挿入してくれる
+NeoBundle 'tpope/vim-endwise'
+
 
 call neobundle#end()
 
