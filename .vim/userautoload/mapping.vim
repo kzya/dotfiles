@@ -22,5 +22,11 @@ nnoremap st :<C-u>tabnew<CR>
 nnoremap sT :<C-u>Unite tab<CR>
 nnoremap ss :<C-u>sp<CR>
 nnoremap sv :<C-u>vs<CR>
-nnoremap sq :<C-u>q<CR>
+nnoremap ss :<C-u>q<CR>
 nnoremap sQ :<C-u>bd<CR>
+nnoremap ; :
+nnoremap : ;
+vnoremap ; :
+vnoremap : ;
+inoremap jk <Esc>
+vnoremap ;; <Esc>
