@@ -1,3 +1,5 @@
+syntax on
+
 set number       " 行番号を表示する
 set laststatus=2 " ステータス行を常に表示
 
