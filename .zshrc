@@ -87,4 +87,8 @@ export https_proxy=https://2013061:J548PmC2@192.168.14.101:3128
 
 source ~/.rvm/scripts/rvm
 
-alias st = 'git status'
+alias st='git status'
+alias pull='git pull'
+alias push='git push'
+alias v='vim'
+alias cm='git commit'
