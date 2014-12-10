@@ -25,6 +25,9 @@ NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'Align'
 " Ruby向けにendを自動挿入してくれる
 NeoBundle 'tpope/vim-endwise'
+"コメントアウト
+NeoBundle 'tyru/caw.vim'
+
 
 
 call neobundle#end()
