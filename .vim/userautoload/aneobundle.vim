@@ -23,8 +23,6 @@ NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tomtom/tcomment_vim'
 "インデントを揃える
 NeoBundle 'Align'
-" Ruby向けにendを自動挿入してくれる
-NeoBundle 'tpope/vim-endwise'
 "コメントアウト
 NeoBundle 'tyru/caw.vim'
 
