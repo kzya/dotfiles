@@ -79,16 +79,18 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-export http_proxy=http://2013061:J548PmC2@192.168.14.101:3128
-export https_proxy=https://2013061:J548PmC2@192.168.14.101:3128
+#export http_proxy=http://2013061:J548PmC2@192.168.14.101:3128
 
-source ~/.rvm/scripts/rvm
+#source ~/.rvm/scripts/rvm
 
 alias st='git status'
 alias pull='git pull'
 alias push='git push'
 alias v='vim'
 alias cm='git commit'
+[[ -d ~/.rbenv  ]] && \
+   export PATH=${HOME}/.rbenv/bin:${PATH} && \
+    eval "$(rbenv init -)"

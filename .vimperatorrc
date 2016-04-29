@@ -1,0 +1,34 @@
+" スクロールの端などの際に出るbeepをoff
+set nobeep
+
+" デフォルトの検索エンジン
+set defsearch=google
+
+" 検索キーワードのハイライト
+set hlsearch
+
+" j/k でのスクロール幅を 1行 から 3行 に変更
+" map j 3jとかすると無限ループして死ぬ
+map j 7<C-e>
+map k 7<C-y>
+
+" ddでタブを閉じる, dでは何もしない
+no dd :tabclose<CR>
+map d <NOP>
+
+" h/lに戻る/進むを割り当て
+map sh <A-Left>
+map sl <A-Right>
+
+" H/Lで左右移動
+map h <Left>
+map l <Right>
+" Shift + ←/→ で現在のタブの位置変更
+map <S-Right> :tabmove! +1<CR>
+map <S-Left> :tabmove! -1<CR>
+ " " " " " " " " "
+" H/Lでタブ移動
+map H gT
+map L gL
+ "
+map <C-R> :mapc<CR>:cmapc<CR>:imapc<CR>:source .vimperatorrc<CR>
