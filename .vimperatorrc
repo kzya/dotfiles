@@ -19,13 +19,13 @@ map R :source ~/_vimperatorrc<CR>
 
 "=======================================================
 
-" h,lに前のタブ,次のタブを割り当てる
-map h <C-PageUp>
-map l <C-PageDown>
+" H,Lに前のタブ,次のタブを割り当てる
+map H <C-PageUp>
+map L <C-PageDown>
 
-" H/Lに左右を割り当てる
-map H <Left>
-map L <Right>
+" h/lに左右を割り当てる
+map h <Left>
+map l <Right>
 
 " Ctrl+h/Ctrl+lに戻る/進むを割り当てる
 map <C-h> <A-Left>
