@@ -157,3 +157,5 @@ vmap T <C-c><Esc><Esc>:mr<Space>googletrans-ja<Space><C-v><CR>
 
 " 読み込み完了メッセージ
 echo "Loaded from vimperatorrc." " " " " " " " " " " " " " " "" " " " " " " "
+
+autocmd LocationChange .* js modes.passAllKeys = false

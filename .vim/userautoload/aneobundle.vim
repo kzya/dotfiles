@@ -22,7 +22,7 @@ NeoBundle 'tpope/vim-endwise'
 " コメントON/OFFを手軽に実行
 NeoBundle 'tomtom/tcomment_vim'
 "インデントを揃える
-NeoBundle 'Align'
+"NeoBundle 'Align'
 "コメントアウト
 NeoBundle 'tyru/caw.vim'
 
