@@ -1,6 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -91,6 +92,29 @@ alias pull='git pull'
 alias push='git push'
 alias v='vim'
 alias cm='git commit'
+
 [[ -d ~/.rbenv  ]] && \
    export PATH=${HOME}/.rbenv/bin:${PATH} && \
     eval "$(rbenv init -)"
+
+
+# カッコの対応などを自動的に補完する
+setopt auto_param_keys
+
+# 補完候補のメニュー選択で、矢印キーの代わりにh
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+
+
+# Vimを使っているので頑張ってVi風のキーバインドに。
+bindkey -v
+
+# 途中までコマンドを打っていて、これ前も入力したと思ったときに、Ctrl-Pで補完してくれる。さらに押せばより古いコマンドで補完。やっぱりさっきの、というときはCtrl-nで戻る。
+autoload -Uz history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "bindkey" history-beginning-search-backward-end
+bindkey "Path" history-beginning-search-forward-end
+

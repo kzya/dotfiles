@@ -31,3 +31,4 @@ vnoremap ; :
 vnoremap : ;
 inoremap jk <Esc>
 vnoremap ;; <Esc>
+"nnoremap gr :<C-u>vim <CR>

@@ -25,6 +25,8 @@ NeoBundle 'tomtom/tcomment_vim'
 "NeoBundle 'Align'
 "コメントアウト
 NeoBundle 'tyru/caw.vim'
+"file search"
+NeoBundle "ctrlpvim/ctrlp.vim"
 
 
 
