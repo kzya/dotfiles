@@ -1,3 +1,4 @@
 " 分割した設定ファイルをすべて読み込む
-set runtimepath+=~/.vim/
+set runtimepath+=~/dotfiles/.vim/
 runtime! userautoload/*.vim
+
